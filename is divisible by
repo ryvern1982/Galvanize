@@ -1,15 +1,14 @@
 def is_divisible_by(num,divisor1,divisor2):
   
  
-  if (divisor1== 0):
-    return (print('May not divide by 0.'))
-  elif (divisor2 == 0):
-    return (print('May not divide by 0.'))
-  elif (num % divisor1 == 0) and (num % divisor2 != 0):
-    return (print(f'This number is divisible by {divisor1}.'))
+  if divisor1 == 0 or divisor2 == 0:
+    return ('May not divide by 0.')
+  elif num % divisor1 == 0 and num % divisor2 != 0:
+    return (f'This number is divisible by {divisor1}.')
   elif (num % divisor1 != 0) and (num % divisor2 == 0):
-    return (print(f'This number is divisible by {divisor2}.'))
+    return (f'This number is divisible by {divisor2}.')
   elif ((num % divisor1 == 0) and (num % divisor2 == 0)) or num == 0:
-    return (print(f'This number is divsible by {divisor1} and {divisor2}.'))
+    return (f'This number is divisible by {divisor1} and {divisor2}.')
   else:
-    return (print(f'This number is not divisible by either {divisor1} or {divisor2}.'))
+    return (f'This number is not divisible by either {divisor1} or {divisor2}.')
+    
